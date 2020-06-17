@@ -1,21 +1,31 @@
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>reCAPTCHA demo: Simple page</title>
-     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link href="static/style.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
-       function onSubmit(token) {
-         document.getElementById("demo-form").submit();
-       }
-     </script>
-  </head>
-  <body>
-  <h1>Invisible reCAPTCHA</h1>
-    <form id='demo-form' action="/case3" method="POST">
-      <button class="g-recaptcha"
-        data-sitekey="6LfF3KUZAAAAANnfyxqApDg_AeDVRIDA1KusJDvE"
-        data-callback='onSubmit'
-        data-action='submit'>Submit</button>
-      <br/>
-    </form>
-  </body>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
+</head>
+<body>
+<h1>reCAPTCHA v3</h1>
+<div class="alert alert-secondary" role="alert">
+    reCAPTCHA v3 allows you to verify if an interaction is legitimate without any user interaction. It is a pure
+    JavaScript API returning a score, giving you the ability to take action in the context of your site: for instance
+    requiring additional factors of authentication, sending a post to moderation, or throttling bots that may be
+    scraping content.
+</div>
+<form action="/case3" id='demo-form' method="POST">
+    <button class="g-recaptcha"
+            data-action='submit'
+            data-callback='onSubmit'
+            data-sitekey="6LfF3KUZAAAAANnfyxqApDg_AeDVRIDA1KusJDvE">Submit
+    </button>
+    <br/>
+</form>
+</body>
 </html>

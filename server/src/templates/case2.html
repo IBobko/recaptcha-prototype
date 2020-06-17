@@ -1,14 +1,22 @@
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>reCAPTCHA demo: Simple page</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-  </head>
-  <body>
-    <form action="/case2" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Lc93KUZAAAAAOESDHV8gj0iSzvAdr_1igMt9ncM"></div>
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+    <link href="static/style.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+<body>
+<h1>reCAPTCHA v2 ("I'm not a robot" Checkbox)</h1>
+<div class="alert alert-secondary" role="alert">
+    The "I'm not a robot" Checkbox requires the user to click a checkbox indicating the user is not a robot. This will
+    either pass the user immediately (with No CAPTCHA) or challenge them to validate whether or not they are human. This
+    is the simplest option to integrate with and only requires two lines of HTML to render the checkbox.
+</div>
+<form action="/case2" method="POST">
+    <div class="g-recaptcha" data-sitekey="6Lc93KUZAAAAAOESDHV8gj0iSzvAdr_1igMt9ncM"></div>
+    <br/>
+    <input type="submit" value="Submit">
+</form>
+</body>
 </html>
