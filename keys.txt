@@ -1,0 +1,23 @@
+CASE 1
+'reCAPTCHA v2 (Invisible reCAPTCHA badge)' has been registered.
+Use this site key in the HTML code your site serves to users.
+6Lep2aUZAAAAAPNMIk_oFNtHDmJGdNRPUTkGk9k3
+Use this secret key for communication between your site and reCAPTCHA.
+6Lep2aUZAAAAANyd7If3D-zVLq6Jjmbn9IXelS1b
+
+CASE 2
+Adding reCAPTCHA to your site
+'reCAPTCHA v2 ("I'm not a robot" tickbox)' has been registered.
+Use this site key in the HTML code your site serves to users.
+6Lc93KUZAAAAAOESDHV8gj0iSzvAdr_1igMt9ncM
+Use this secret key for communication between your site and reCAPTCHA.
+6Lc93KUZAAAAAILSS0gkw812rhbgenBuYUZ5Zek5
+
+CASE3
+'reCAPTCHA v3' has been registered.
+Use this site key in the HTML code your site serves to users.
+6LfF3KUZAAAAANnfyxqApDg_AeDVRIDA1KusJDvE
+Use this secret key for communication between your site and reCAPTCHA.
+6LfF3KUZAAAAAP9fv2mWt--khuAbjH7HV___nmTv
+
+

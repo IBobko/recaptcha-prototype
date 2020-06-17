@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+         console.log(token);
+         return false;
+       }
+     </script>
+  </head>
+  <body>
+  <h1>Invisible reCAPTCHA</h1>
+    <form id='demo-form' action="/case1" method="POST">
+      <button class="g-recaptcha" data-sitekey="6Lep2aUZAAAAAPNMIk_oFNtHDmJGdNRPUTkGk9k3" data-callback='onSubmit'>Submit</button>
+      <br/>
+    </form>
+  </body>
+</html>
